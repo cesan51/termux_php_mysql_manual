@@ -34,7 +34,7 @@ pkill sshd # Para finalizar
 Instalación de PuTTy y conexión de forma remota para manejo sencillo desde equipo
 
 ```bash
-whoami@ifconfig # Ejemplo u0_564@192.168.1.2
+whoami@ifconfig # Ejemplo u0_a564@192.168.1.2
 port 8022
 ```
 
@@ -46,7 +46,7 @@ ls -la /data/data/com.termux/files/usr/libexec/apache2 | grep php
 ```
 Debería devolver algo similar a:
 ```bash
--rwx------ 1 u0_a252 u0_a252 15001832 Jul  5 01:32 libphp.so
+-rwx------ 1 u0_a564 u0_a564 15001832 Jul  5 01:32 libphp.so
 ```
 
 ## 5. Configuración de Apache
@@ -218,7 +218,7 @@ Ejecuta el script para iniciar los servicios:
 ## 11. Subida de software mediante SSH
 Para subir archivos desde un equipo externo:
 ```bash
-scp -P 8022 software.zip u0_a249@192.168.1.21:/data/data/com.termux/files/usr/share/apache2/default-site/htdocs
+scp -P 8022 software.zip u0_a564@192.168.1.2:/data/data/com.termux/files/usr/share/apache2/default-site/htdocs
 ```
 Crea la carpeta del software y descomprime el archivo el archivo en ella:
 ```bash
